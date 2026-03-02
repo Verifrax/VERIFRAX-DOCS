@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "VERIFRAX-DOCS"
+message: "Cite this repository when referencing the VERIFRAX documentation portal."
+type: software
+authors:
+  - name: "Verifrax"
+repository-code: "https://github.com/Verifrax/VERIFRAX-DOCS"
+license: "Proprietary"
