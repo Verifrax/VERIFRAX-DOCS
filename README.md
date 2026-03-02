@@ -1,24 +1,46 @@
-# VERIFRAX DOCUMENTATION
+# VERIFRAX-DOCS
 
-AUTHORITATIVE EXPLANATIONS OF THE VERIFRAX SYSTEM.
+## Purpose
 
-THIS REPO:
-- EXPLAINS (NOT DEFINES)
-- REFERENCES SPEC AND PROFILES
-- NEVER OVERRIDES CONTRACTS
+Public documentation site for the Verifrax stack.
 
----
-AUTHORITATIVE LINKS:
-- SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
-- PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
-- VERIFIER: https://github.com/Verifrax/VERIFRAX-verify
+## Status
 
-## Contract
-- stable permalinks
-- SPEC-anchored normative references
-- minimal + deterministic build pipeline
+- **Stability**: Experimental
+- **SemVer**: Not guaranteed until v1.0.0
+- **Security**: See **Security** section below
 
-## Core links
-- SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
-- PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
-- Engine: https://github.com/Verifrax/VERIFRAX
+## Scope
+
+- What this repo is responsible for
+- What it explicitly does **not** do
+
+## Quickstart
+
+```bash
+# clone
+git clone https://github.com/Verifrax/VERIFRAX-DOCS.git
+cd VERIFRAX-DOCS
+
+# install (adjust if needed)
+# (placeholder) npm install / pnpm install / go test ./... / etc.
+```
+
+## Repository layout
+
+- `/` Root sources
+- `/.github/` Issue + PR templates
+- `/docs/` Documentation (if present)
+
+## Security
+
+- Report vulnerabilities privately: **security@verifrax.org**
+- Do **not** open public issues for sensitive findings
+
+## Contributing
+
+See `CONTRIBUTING.md`.
+
+## License
+
+MIT. See `LICENSE`.
