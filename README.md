@@ -8,17 +8,28 @@ THIS REPO:
 - NEVER OVERRIDES CONTRACTS
 
 ---
-AUTHORITATIVE LINKS:
-- SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
-- PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
-- VERIFIER: https://github.com/Verifrax/VERIFRAX-verify
+AUTHORITATIVE REPOSITORY LINKS:
+- VERIFRAX: https://github.com/Verifrax/VERIFRAX
+- VERIFRAX-SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
+- VERIFRAX-PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
+- VERIFRAX-verify: https://github.com/Verifrax/VERIFRAX-verify
+- AUCTORISEAL: https://github.com/Verifrax/AUCTORISEAL
 
 ## Contract
 - stable permalinks
-- SPEC-anchored normative references
+- VERIFRAX-anchored normative references
+- derived specification and profile references remain explicit
 - minimal + deterministic build pipeline
 
 ## Core links
-- SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
-- PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
-- Engine: https://github.com/Verifrax/VERIFRAX
+- VERIFRAX: https://github.com/Verifrax/VERIFRAX
+- VERIFRAX-SPEC: https://github.com/Verifrax/VERIFRAX-SPEC
+- VERIFRAX-PROFILES: https://github.com/Verifrax/VERIFRAX-PROFILES
+- VERIFRAX-verify: https://github.com/Verifrax/VERIFRAX-verify
+- AUCTORISEAL: https://github.com/Verifrax/AUCTORISEAL
+
+## Authority model
+- VERIFRAX authors active normative source material.
+- VERIFRAX-SPEC publishes derived specification artifacts from VERIFRAX.
+- Derived specification artifacts do not define upstream repository authority.
+- Governance authority is external and binds through AUCTORISEAL plus the governed repository set declared in .github.
