@@ -20,10 +20,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Prepare artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          mkdir -p dist
+          cp CNAME dist/CNAME
+          cp public/index.html dist/index.html
+          cp -R surface-system dist/surface-system
+          test -f dist/index.html
+          test -f dist/CNAME
+          test -f dist/surface-system/shell/base.css
+          grep -Fx "docs.verifrax.net" dist/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: dist
   deploy:
     needs: build
     runs-on: ubuntu-latest
