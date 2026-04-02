@@ -44,7 +44,9 @@ It should reduce ambiguity between:
 * governed execution
 * proof publication
 * verification UI
-* archive and seal surfaces\n\n## Host ownership lock
+* archive and seal surfaces
+
+## Host ownership lock
 
 This repository must be the sole owning repository for `docs.verifrax.net`.
 
@@ -58,7 +60,9 @@ It must not become:
 * the verifier surface
 * the intake surface
 * the archive surface
-* the evidence-root registry\n\n## What this repository is not
+* the evidence-root registry
+
+## What this repository is not
 
 VERIFRAX-DOCS is not:
 
