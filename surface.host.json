@@ -4,18 +4,17 @@
   "hostClass": "reference",
   "role": "docs",
   "title": "VERIFRAX Docs",
-  "description": "Official documentation surface for the VERIFRAX system.",
+  "description": "Documentation surface for the VERIFRAX public perimeter. This surface publishes documentation only. It does not execute runtime, issue authority, publish proof, or accept intake.",
   "deployMode": "static-root",
   "adjacentHosts": {
-    "Execution": "https://api.verifrax.net",
-    "Proof publication": "https://proof.verifrax.net",
-    "Verification": "https://verify.verifrax.net",
+    "Root": "https://www.verifrax.net",
+    "Proof": "https://proof.verifrax.net",
+    "Verify": "https://verify.verifrax.net",
+    "Apply": "https://apply.verifrax.net",
     "Authority": "https://auctoriseal.verifrax.net",
-    "Runtime reference": "https://corpiform.verifrax.net",
-    "Enforcement reference": "https://cicullis.verifrax.net",
-    "Seal archive": "https://sigillarium.verifrax.net",
-    "Intake": "https://apply.verifrax.net",
-    "Documentation": "https://docs.verifrax.net",
+    "Runtime": "https://corpiform.verifrax.net",
+    "Enforcement": "https://cicullis.verifrax.net",
+    "Archive": "https://sigillarium.verifrax.net",
     "Status": "https://status.verifrax.net"
   }
 }
