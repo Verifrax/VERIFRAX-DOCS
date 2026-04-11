@@ -1,0 +1,19 @@
+name: build
+
+on:
+  push:
+    branches: [ main, midiakiasat/terminal-recognition-and-recourse-wiring ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify docs surface build contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f LICENSE
