@@ -1,32 +1,51 @@
 name: pages
+
 on:
   pull_request:
+    branches: [main]
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build marker
+
+      - uses: actions/configure-pages@v5
+
+      - name: Verify static docs surface
         shell: bash
         run: |
           set -euo pipefail
           test -f index.html
           test -f 404.html
-          echo "build: ok"
+          test -f CNAME
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
   deploy:
-    if: github.event_name == push && github.ref == refs/heads/main
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
     steps:
-      - name: Deploy marker
-        shell: bash
-        run: |
-          set -euo pipefail
-          echo "deploy: ok"
+      - id: deployment
+        uses: actions/deploy-pages@v4
