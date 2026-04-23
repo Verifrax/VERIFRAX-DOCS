@@ -29,7 +29,7 @@ This repository is part of the VERIFRAX proof perimeter.
 * Public host ownership: `docs.verifrax.net`
 * Package status: repository only
 * Current repository posture: public explanatory surface
-* License: Apache License Version 2.0
+* License: Mozilla Public License 2.0
 
 ## Boundary
 
@@ -174,4 +174,5 @@ VERIFRAX-DOCS is not intake.
 
 ## License
 
-Apache License Version 2.0
+This repository is licensed under the Mozilla Public License 2.0. See `LICENSE`.
+
