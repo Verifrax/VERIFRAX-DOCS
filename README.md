@@ -1,5 +1,7 @@
 # VERIFRAX-DOCS
 
+* License: GNU General Public License v3.0
+
 VERIFRAX-DOCS is the Verifrax explanatory-documentation boundary: the public surface that explains the system, surfaces, and reading order without becoming authored protocol source, authority issuance, governed execution, public verification, proof publication, archive/reference, or intake.
 
 ## Proof artifacts
@@ -174,5 +176,4 @@ VERIFRAX-DOCS is not intake.
 
 ## License
 
-This repository is licensed under the Mozilla Public License 2.0. See `LICENSE`.
-
+This repository is licensed under the GNU General Public License v3.0. See `LICENSE`.
